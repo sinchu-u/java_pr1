@@ -2,12 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    private List<Product> products; // Список товарів у кошику
-
-    // Конструктор класу
-    public Cart() {
-        this.products = new ArrayList<>();
-    }
+    private static List<Product> products = new ArrayList<>(); // Список товарів у кошику
 
     // Метод для додавання товару до кошика
     public void addProduct(Product product) {

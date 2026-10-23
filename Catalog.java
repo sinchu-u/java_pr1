@@ -2,11 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Catalog {
-    private List<Product> products;
-
-    public Catalog(){
-        this.products = new ArrayList<>();
-    }
+    private static List<Product> products = new ArrayList<>();
 
     public void addProduct(Product product){
         products.add(product);

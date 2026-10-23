@@ -1,16 +1,13 @@
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
+@AllArgsConstructor
 public class Category {
     private int id; // Унікальний ідентифікатор категорії
     private String name; // Назва категорії
-
-    public Category(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 
     @Override
     public String toString() {
